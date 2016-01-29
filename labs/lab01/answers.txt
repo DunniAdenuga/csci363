@@ -1,0 +1,59 @@
+Problem 1.1
+
+(gdb) c
+Continuing.
+removing 1st node ...
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00000000004008a8 in dlist_remove (value_to_remove=0x7fffffffd690 "1080", the_list=0x602010) at dlist.c:79
+(gdb) where
+#0  0x00000000004008a8 in dlist_remove (value_to_remove=0x7fffffffd690 "1080", the_list=0x602010) at dlist.c:79
+#1  0x0000000000400b19 in main (argc=1, argv=0x7fffffffdc98) at test_dlist.c:45
+(gdb) 
+
+We are trying to access nodes that does not exist(NULL), in this case, the node before the first node(prev) and the node after the last node(next).
+
+Problem 1.2
+[ia005@brki167-lnx-2 lab01]$ ./test_dlist</usr/share/dict/words 
+after inserting 20 words...
+0 1080
+1 10-point
+2 10th
+3 11-point
+4 12-point
+5 16-point
+6 18-point
+7 1st
+8 2
+9 20-point
+10 2,4,5-t
+11 2,4-d
+12 2D
+13 2nd
+14 30-30
+15 3-D
+16 3-d
+17 3D
+18 3M
+19 3rd
+removing  node 16 ...
+removing node 0 - 1st node ...
+removing last node - the 19th node ...
+after the removal...
+1 10-point
+2 10th
+3 11-point
+4 12-point
+5 16-point
+6 18-point
+7 1st
+8 2
+9 20-point
+10 2,4,5-t
+11 2,4-d
+12 2D
+13 2nd
+14 30-30
+15 3-D
+17 3D
+18 3M
