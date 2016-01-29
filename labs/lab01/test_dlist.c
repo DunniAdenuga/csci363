@@ -51,6 +51,9 @@ int main(int argc, char* argv[]) {
 
   printf("after the removal...\n");
   dlist_traverse(a_list);
+  
+  //free(a_node);
+  freeSpace(a_list);
 
   return 0;
 }

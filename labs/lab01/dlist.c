@@ -88,8 +88,10 @@ void dlist_remove(char * value_to_remove, struct dlist * the_list) {
 
 	node_to_remove->prev->next = node_to_remove->next;
       }
+      
     }
-
+    free(node_to_remove->word);
+    free(node_to_remove);
   }  // end of list not empty
 }
 
@@ -120,6 +122,7 @@ void dlist_traverse(struct dlist * a_list) {
       ptr = ptr->next;
     } // end of while
   }
+  free(ptr);
 }
 
 /*
@@ -142,4 +145,20 @@ struct dnode * make_node(char * word, int count) {
   new_node->prev = new_node->next = NULL;
 
   return new_node;
+}
+
+void freeSpace(struct dlist * the_list){
+  struct dnode *ptr;
+  struct dnode *ptr2;
+  if (the_list != NULL){
+    ptr = the_list->head;
+    while (ptr != NULL) {
+      ptr2 = ptr->next;
+      free(ptr->word);
+      free(ptr);
+      ptr = ptr2;
+    } 
+}
+  
+  free(the_list);
 }
