@@ -118,3 +118,26 @@ after the removal...
 ==17529== For counts of detected and suppressed errors, rerun with: -v
 ==17529== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
 [ia005@brki167-lnx-2 lab01]$ 
+
+Problem 3.1:
+The webclient makes a request to the webserver, the webserver parses the requestto see if it's GET, POST or HEAD. Then, it finds the page and sends it back to the client. 
+From performing the prescribed exercises, I noticed that the webclient is very similar to the browser. The webclient displayed the pages in text format with html tags but the web browser presented the page more graphically.
+When I ran the webclient on a general webpage, the general webpage acted as the server returned the contents to the webclient as text with html tags.
+
+Problem 3.2:
+
+$./webclient linuxremote1 HEAD / 14001
+HTTP/1.0 200 OK
+Content-Length: 691
+Content-Type: text/html
+
+$ ./webclient linuxremote1 HEAD /JLH.jpg 14001
+HTTP/1.0 200 OK
+Content-Length: 99720
+Content-Type: image/jpeg
+
+$ ./webclient linuxremote1 HEAD /default.html 14001
+HTTP/1.0 403 No Permission
+
+$ ./webclient linuxremote1 HEAD /none.html 14001
+HTTP/1.0 404 Not Found
