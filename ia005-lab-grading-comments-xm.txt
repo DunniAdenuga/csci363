@@ -1,0 +1,10 @@
+Student: Dunni Adenuga
+
+Lab1:
+Grade: 20/20
+Comments: Good work!
+P1.1: Very good!
+P1.2: Very good!
+P2: Very good!
+P3.1: Very good! Where you said "the general webpage acted as the server" really should be just "web server." Pages don't act as a server.
+P3.2: Very good!
