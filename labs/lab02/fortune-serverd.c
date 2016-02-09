@@ -80,7 +80,7 @@ int main(int argc, char* argv[]) {
   //int n;                         // byte count
   int port;		         // protocol port number		
   int alen;		         // length of address	
-  pid_t pid[MAX_REQ];
+  
   int request = 0; //number of processes
   // Check command-line argument for protocol port.
   
@@ -148,23 +148,36 @@ int main(int argc, char* argv[]) {
       exit(1);
     }
     request++;
-    
-    if(request < MAX_REQ){
+    //printf("request %d", request);
+    if(request <= MAX_REQ){
     // Serve use requests
-    pid[request-1] = Fork();
-    sleep(5000);
     
-   
-
-    if(getpid() == 0){
-      process_request(sd2);
-      request--;
-      close(sd2);
-      _exit(SIGCHLD);
+      pid_t pidy;
+      pidy = fork();
+      if(pidy == -1){
+	fprintf(stderr,"SERVER: Fork failed\n");
+	exit(1);
       }
-    //close(sd2);
+      
+      if(pidy == 0){ 
+      process_request(sd2);
+     
+      //request--;
+      close(sd2);
+      exit(1);
+      
+      }
+      
+    
     }
-  }
+    else{
+      return 1;
+    }
+    
+  
+  } 
+  
+  return 1;
 }
 
 /*
