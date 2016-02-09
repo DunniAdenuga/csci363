@@ -41,3 +41,382 @@ nobody wants Vista, and it’s all the same debate: whether you are an Idealist
     -- Martian Headsets ( http://www.joelonsoftware.com/items/2008/03/17.html )
 
  The freuency is: 1. 
+
+Problem 3: memory leak check
+
+[ia005@brki167-lnx-4 lab02]$ valgrind --leak-check=full --show-reachable=yes ./fortune-serverd 14002
+==25535== Memcheck, a memory error detector
+==25535== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==25535== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==25535== Command: ./fortune-serverd 14002
+==25535== 
+==25545== Syscall param write(buf) points to uninitialised byte(s)
+==25545==    at 0x3F66EDB560: __write_nocancel (in /lib64/libc-2.12.so)
+==25545==    by 0x401961: writen (writen.c:42)
+==25545==    by 0x40126D: process_request (fortune-serverd.c:248)
+==25545==    by 0x4010AF: main (fortune-serverd.c:165)
+==25545==  Address 0x4c51b29 is 1,097 bytes inside a block of size 78,436 alloc'd
+==25545==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25545==    by 0x40152F: init_cookies (cookies.c:19)
+==25545==    by 0x400FEB: main (fortune-serverd.c:137)
+==25545== 
+==25545== 
+==25545== HEAP SUMMARY:
+==25545==     in use at exit: 80,484 bytes in 3 blocks
+==25545==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25545== 
+==25545== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25545==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25545==    by 0x4010EB: process_request (fortune-serverd.c:193)
+==25545==    by 0x4010AF: main (fortune-serverd.c:165)
+==25545== 
+==25545== 1,024 bytes in 1 blocks are definitely lost in loss record 2 of 3
+==25545==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25545==    by 0x401100: process_request (fortune-serverd.c:199)
+==25545==    by 0x4010AF: main (fortune-serverd.c:165)
+==25545== 
+==25545== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25545==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25545==    by 0x401518: init_cookies (cookies.c:18)
+==25545==    by 0x400FEB: main (fortune-serverd.c:137)
+==25545== 
+==25545== LEAK SUMMARY:
+==25545==    definitely lost: 2,048 bytes in 2 blocks
+==25545==    indirectly lost: 0 bytes in 0 blocks
+==25545==      possibly lost: 0 bytes in 0 blocks
+==25545==    still reachable: 78,436 bytes in 1 blocks
+==25545==         suppressed: 0 bytes in 0 blocks
+==25545== 
+==25545== For counts of detected and suppressed errors, rerun with: -v
+==25545== Use --track-origins=yes to see where uninitialised values come from
+==25545== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 6 from 6)
+==25549== Syscall param write(buf) points to uninitialised byte(s)
+==25549==    at 0x3F66EDB560: __write_nocancel (in /lib64/libc-2.12.so)
+==25549==    by 0x401961: writen (writen.c:42)
+==25549==    by 0x40126D: process_request (fortune-serverd.c:248)
+==25549==    by 0x4010AF: main (fortune-serverd.c:165)
+==25549==  Address 0x4c51ab8 is 984 bytes inside a block of size 78,436 alloc'd
+==25549==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25549==    by 0x40152F: init_cookies (cookies.c:19)
+==25549==    by 0x400FEB: main (fortune-serverd.c:137)
+==25549== 
+==25549== 
+==25549== HEAP SUMMARY:
+==25549==     in use at exit: 80,484 bytes in 3 blocks
+==25549==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25549== 
+==25549== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25549==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25549==    by 0x4010EB: process_request (fortune-serverd.c:193)
+==25549==    by 0x4010AF: main (fortune-serverd.c:165)
+==25549== 
+==25549== 1,024 bytes in 1 blocks are definitely lost in loss record 2 of 3
+==25549==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25549==    by 0x401100: process_request (fortune-serverd.c:199)
+==25549==    by 0x4010AF: main (fortune-serverd.c:165)
+==25549== 
+==25549== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25549==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25549==    by 0x401518: init_cookies (cookies.c:18)
+==25549==    by 0x400FEB: main (fortune-serverd.c:137)
+==25549== 
+==25549== LEAK SUMMARY:
+==25549==    definitely lost: 2,048 bytes in 2 blocks
+==25549==    indirectly lost: 0 bytes in 0 blocks
+==25549==      possibly lost: 0 bytes in 0 blocks
+==25549==    still reachable: 78,436 bytes in 1 blocks
+==25549==         suppressed: 0 bytes in 0 blocks
+==25549== 
+==25549== For counts of detected and suppressed errors, rerun with: -v
+==25549== Use --track-origins=yes to see where uninitialised values come from
+==25549== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 6 from 6)
+==25551== Conditional jump or move depends on uninitialised value(s)
+==25551==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25551==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25551==    by 0x4010AF: main (fortune-serverd.c:165)
+==25551== 
+==25551== 
+==25551== HEAP SUMMARY:
+==25551==     in use at exit: 157,896 bytes in 3 blocks
+==25551==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25551== 
+==25551== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25551==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25551==    by 0x401100: process_request (fortune-serverd.c:199)
+==25551==    by 0x4010AF: main (fortune-serverd.c:165)
+==25551== 
+==25551== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25551==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25551==    by 0x401518: init_cookies (cookies.c:18)
+==25551==    by 0x400FEB: main (fortune-serverd.c:137)
+==25551== 
+==25551== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25551==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25551==    by 0x40152F: init_cookies (cookies.c:19)
+==25551==    by 0x400FEB: main (fortune-serverd.c:137)
+==25551== 
+==25551== LEAK SUMMARY:
+==25551==    definitely lost: 1,024 bytes in 1 blocks
+==25551==    indirectly lost: 0 bytes in 0 blocks
+==25551==      possibly lost: 0 bytes in 0 blocks
+==25551==    still reachable: 156,872 bytes in 2 blocks
+==25551==         suppressed: 0 bytes in 0 blocks
+==25551== 
+==25551== For counts of detected and suppressed errors, rerun with: -v
+==25551== Use --track-origins=yes to see where uninitialised values come from
+==25551== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25553== Conditional jump or move depends on uninitialised value(s)
+==25553==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25553==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25553==    by 0x4010AF: main (fortune-serverd.c:165)
+==25553== 
+==25553== 
+==25553== HEAP SUMMARY:
+==25553==     in use at exit: 157,896 bytes in 3 blocks
+==25553==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25553== 
+==25553== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25553==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25553==    by 0x401100: process_request (fortune-serverd.c:199)
+==25553==    by 0x4010AF: main (fortune-serverd.c:165)
+==25553== 
+==25553== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25553==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25553==    by 0x401518: init_cookies (cookies.c:18)
+==25553==    by 0x400FEB: main (fortune-serverd.c:137)
+==25553== 
+==25553== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25553==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25553==    by 0x40152F: init_cookies (cookies.c:19)
+==25553==    by 0x400FEB: main (fortune-serverd.c:137)
+==25553== 
+==25553== LEAK SUMMARY:
+==25553==    definitely lost: 1,024 bytes in 1 blocks
+==25553==    indirectly lost: 0 bytes in 0 blocks
+==25553==      possibly lost: 0 bytes in 0 blocks
+==25553==    still reachable: 156,872 bytes in 2 blocks
+==25553==         suppressed: 0 bytes in 0 blocks
+==25553== 
+==25553== For counts of detected and suppressed errors, rerun with: -v
+==25553== Use --track-origins=yes to see where uninitialised values come from
+==25553== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25555== Conditional jump or move depends on uninitialised value(s)
+==25555==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25555==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25555==    by 0x4010AF: main (fortune-serverd.c:165)
+==25555== 
+==25555== 
+==25555== HEAP SUMMARY:
+==25555==     in use at exit: 157,896 bytes in 3 blocks
+==25555==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25555== 
+==25555== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25555==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25555==    by 0x401100: process_request (fortune-serverd.c:199)
+==25555==    by 0x4010AF: main (fortune-serverd.c:165)
+==25555== 
+==25555== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25555==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25555==    by 0x401518: init_cookies (cookies.c:18)
+==25555==    by 0x400FEB: main (fortune-serverd.c:137)
+==25555== 
+==25555== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25555==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25555==    by 0x40152F: init_cookies (cookies.c:19)
+==25555==    by 0x400FEB: main (fortune-serverd.c:137)
+==25555== 
+==25555== LEAK SUMMARY:
+==25555==    definitely lost: 1,024 bytes in 1 blocks
+==25555==    indirectly lost: 0 bytes in 0 blocks
+==25555==      possibly lost: 0 bytes in 0 blocks
+==25555==    still reachable: 156,872 bytes in 2 blocks
+==25555==         suppressed: 0 bytes in 0 blocks
+==25555== 
+==25555== For counts of detected and suppressed errors, rerun with: -v
+==25555== Use --track-origins=yes to see where uninitialised values come from
+==25555== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25557== Conditional jump or move depends on uninitialised value(s)
+==25557==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25557==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25557==    by 0x4010AF: main (fortune-serverd.c:165)
+==25557== 
+==25557== 
+==25557== HEAP SUMMARY:
+==25557==     in use at exit: 157,896 bytes in 3 blocks
+==25557==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25557== 
+==25557== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25557==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25557==    by 0x401100: process_request (fortune-serverd.c:199)
+==25557==    by 0x4010AF: main (fortune-serverd.c:165)
+==25557== 
+==25557== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25557==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25557==    by 0x401518: init_cookies (cookies.c:18)
+==25557==    by 0x400FEB: main (fortune-serverd.c:137)
+==25557== 
+==25557== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25557==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25557==    by 0x40152F: init_cookies (cookies.c:19)
+==25557==    by 0x400FEB: main (fortune-serverd.c:137)
+==25557== 
+==25557== LEAK SUMMARY:
+==25557==    definitely lost: 1,024 bytes in 1 blocks
+==25557==    indirectly lost: 0 bytes in 0 blocks
+==25557==      possibly lost: 0 bytes in 0 blocks
+==25557==    still reachable: 156,872 bytes in 2 blocks
+==25557==         suppressed: 0 bytes in 0 blocks
+==25557== 
+==25557== For counts of detected and suppressed errors, rerun with: -v
+==25557== Use --track-origins=yes to see where uninitialised values come from
+==25557== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25559== Conditional jump or move depends on uninitialised value(s)
+==25559==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25559==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25559==    by 0x4010AF: main (fortune-serverd.c:165)
+==25559== 
+==25559== 
+==25559== HEAP SUMMARY:
+==25559==     in use at exit: 157,896 bytes in 3 blocks
+==25559==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25559== 
+==25559== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25559==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25559==    by 0x401100: process_request (fortune-serverd.c:199)
+==25559==    by 0x4010AF: main (fortune-serverd.c:165)
+==25559== 
+==25559== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25559==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25559==    by 0x401518: init_cookies (cookies.c:18)
+==25559==    by 0x400FEB: main (fortune-serverd.c:137)
+==25559== 
+==25559== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25559==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25559==    by 0x40152F: init_cookies (cookies.c:19)
+==25559==    by 0x400FEB: main (fortune-serverd.c:137)
+==25559== 
+==25559== LEAK SUMMARY:
+==25559==    definitely lost: 1,024 bytes in 1 blocks
+==25559==    indirectly lost: 0 bytes in 0 blocks
+==25559==      possibly lost: 0 bytes in 0 blocks
+==25559==    still reachable: 156,872 bytes in 2 blocks
+==25559==         suppressed: 0 bytes in 0 blocks
+==25559== 
+==25559== For counts of detected and suppressed errors, rerun with: -v
+==25559== Use --track-origins=yes to see where uninitialised values come from
+==25559== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25561== Conditional jump or move depends on uninitialised value(s)
+==25561==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25561==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25561==    by 0x4010AF: main (fortune-serverd.c:165)
+==25561== 
+==25561== 
+==25561== HEAP SUMMARY:
+==25561==     in use at exit: 157,896 bytes in 3 blocks
+==25561==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25561== 
+==25561== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25561==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25561==    by 0x401100: process_request (fortune-serverd.c:199)
+==25561==    by 0x4010AF: main (fortune-serverd.c:165)
+==25561== 
+==25561== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25561==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25561==    by 0x401518: init_cookies (cookies.c:18)
+==25561==    by 0x400FEB: main (fortune-serverd.c:137)
+==25561== 
+==25561== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25561==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25561==    by 0x40152F: init_cookies (cookies.c:19)
+==25561==    by 0x400FEB: main (fortune-serverd.c:137)
+==25561== 
+==25561== LEAK SUMMARY:
+==25561==    definitely lost: 1,024 bytes in 1 blocks
+==25561==    indirectly lost: 0 bytes in 0 blocks
+==25561==      possibly lost: 0 bytes in 0 blocks
+==25561==    still reachable: 156,872 bytes in 2 blocks
+==25561==         suppressed: 0 bytes in 0 blocks
+==25561== 
+==25561== For counts of detected and suppressed errors, rerun with: -v
+==25561== Use --track-origins=yes to see where uninitialised values come from
+==25561== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25563== Conditional jump or move depends on uninitialised value(s)
+==25563==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25563==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25563==    by 0x4010AF: main (fortune-serverd.c:165)
+==25563== 
+==25563== 
+==25563== HEAP SUMMARY:
+==25563==     in use at exit: 157,896 bytes in 3 blocks
+==25563==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25563== 
+==25563== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25563==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25563==    by 0x401100: process_request (fortune-serverd.c:199)
+==25563==    by 0x4010AF: main (fortune-serverd.c:165)
+==25563== 
+==25563== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25563==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25563==    by 0x401518: init_cookies (cookies.c:18)
+==25563==    by 0x400FEB: main (fortune-serverd.c:137)
+==25563== 
+==25563== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25563==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25563==    by 0x40152F: init_cookies (cookies.c:19)
+==25563==    by 0x400FEB: main (fortune-serverd.c:137)
+==25563== 
+==25563== LEAK SUMMARY:
+==25563==    definitely lost: 1,024 bytes in 1 blocks
+==25563==    indirectly lost: 0 bytes in 0 blocks
+==25563==      possibly lost: 0 bytes in 0 blocks
+==25563==    still reachable: 156,872 bytes in 2 blocks
+==25563==         suppressed: 0 bytes in 0 blocks
+==25563== 
+==25563== For counts of detected and suppressed errors, rerun with: -v
+==25563== Use --track-origins=yes to see where uninitialised values come from
+==25563== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25565== Conditional jump or move depends on uninitialised value(s)
+==25565==    at 0x4A07C6A: strcat (mc_replace_strmem.c:267)
+==25565==    by 0x4013B6: process_request (fortune-serverd.c:276)
+==25565==    by 0x4010AF: main (fortune-serverd.c:165)
+==25565== 
+==25565== 
+==25565== HEAP SUMMARY:
+==25565==     in use at exit: 157,896 bytes in 3 blocks
+==25565==   total heap usage: 57 allocs, 54 frees, 164,935 bytes allocated
+==25565== 
+==25565== 1,024 bytes in 1 blocks are definitely lost in loss record 1 of 3
+==25565==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25565==    by 0x401100: process_request (fortune-serverd.c:199)
+==25565==    by 0x4010AF: main (fortune-serverd.c:165)
+==25565== 
+==25565== 78,436 bytes in 1 blocks are still reachable in loss record 2 of 3
+==25565==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25565==    by 0x401518: init_cookies (cookies.c:18)
+==25565==    by 0x400FEB: main (fortune-serverd.c:137)
+==25565== 
+==25565== 78,436 bytes in 1 blocks are still reachable in loss record 3 of 3
+==25565==    at 0x4A06A2E: malloc (vg_replace_malloc.c:270)
+==25565==    by 0x40152F: init_cookies (cookies.c:19)
+==25565==    by 0x400FEB: main (fortune-serverd.c:137)
+==25565== 
+==25565== LEAK SUMMARY:
+==25565==    definitely lost: 1,024 bytes in 1 blocks
+==25565==    indirectly lost: 0 bytes in 0 blocks
+==25565==      possibly lost: 0 bytes in 0 blocks
+==25565==    still reachable: 156,872 bytes in 2 blocks
+==25565==         suppressed: 0 bytes in 0 blocks
+==25565== 
+==25565== For counts of detected and suppressed errors, rerun with: -v
+==25565== Use --track-origins=yes to see where uninitialised values come from
+==25565== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 6 from 6)
+==25535== 
+==25535== HEAP SUMMARY:
+==25535==     in use at exit: 0 bytes in 0 blocks
+==25535==   total heap usage: 55 allocs, 55 frees, 162,887 bytes allocated
+==25535== 
+==25535== All heap blocks were freed -- no leaks are possible
+==25535== 
+==25535== For counts of detected and suppressed errors, rerun with: -v
+==25535== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)
+[ia005@brki167-lnx-4 lab02]$ 

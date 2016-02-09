@@ -27,6 +27,7 @@
 #include <netdb.h>
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
@@ -42,6 +43,7 @@
 extern void init_cookies(char *);
 extern char * get_cookie(int); 
 extern int  count_cookies(void);
+extern void freeCookie(void);
 extern ssize_t				
 readn(int, void *, size_t n);
 extern ssize_t						
@@ -171,11 +173,13 @@ int main(int argc, char* argv[]) {
     
     }
     else{
+      freeCookie();
       return 1;
     }
     
   
   } 
+  
   
   return 1;
 }
@@ -242,6 +246,8 @@ void process_request(int sock)  {
     writen(sock,&len , 4);
     
     writen(sock, cookie, len+1);
+    free(cookie);
+    close(sock);
   }
   
   else if(strcmp(buf, "stat") == 0){
@@ -261,6 +267,7 @@ void process_request(int sock)  {
     int x = cookieIndexCount[num]; 
     char stuff[5];
     sprintf(stuff, "%d", x);
+    bzero(stuff, sizeof(stuff));
     strcat(result,  stuff);
     strcat(result, ". \n ");
   //free(cookie);
@@ -271,8 +278,10 @@ void process_request(int sock)  {
     int len2 = strlen(result)+ 1;
     writen(sock, &len2,4);
     writen(sock, result, len2);
+    free(result);
   close(sock);
 }
+  bzero(buf, sizeof(buf));
 }
 
   int searchArray(int array[], int target){

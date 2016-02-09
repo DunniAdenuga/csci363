@@ -130,12 +130,19 @@ int main(int argc, char* argv[]) {
   readn(sd, &size_read, 4);
   
   readn(sd, buf, size_read);
-
+  if(size_read != 0){
   printf("From the server:\n %s\n", buf);
-  
+    }
+    else{
+      printf("Nothing from server\n");
+    }
+   
   // Close the socket.   
   close(sd);
+  //free(ptrp);
+  //free(&sad);
   
+  free(buf);
   // Terminate the client program gracefully. 
   exit(0);
 }

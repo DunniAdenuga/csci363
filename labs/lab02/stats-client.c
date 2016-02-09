@@ -129,8 +129,14 @@ int main(int argc, char* argv[]) {
   writen(sd, "stat", x);
   readn(sd, &size_read, 4);
   readn(sd, buf, size_read);
-
+  
+  if(size_read != 0){
   printf("Reply from the server: %s\n", buf);
+    }
+    else{
+      printf("Nothing from server\n");
+    }
+  
   
   // Close the socket.   
   close(sd);
