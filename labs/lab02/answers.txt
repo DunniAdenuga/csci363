@@ -1,0 +1,43 @@
+Dunni Adenuga
+CSCI 363
+Lab 02
+2/8/2016
+
+[ia005@brki167-lnx-4 lab02]$ ./fortune-server 14002
+
+[ia005@brki167-lnx-4 lab02]$ ./stats-client brki167-lnx-4 14002 
+Reply from the server: No fortune-cookie has been accessed today.
+
+[ia005@brki167-lnx-4 lab02]$ ./fortune-client brki167-lnx-4 14002 
+From the server:
+ That’s why I can’t take sides on this issue and I’m not going to. But every
+working software developer should understand, at least, how standards work,
+how standards should work, how we got into this mess, so I want to try to
+explain a little bit about the problem here, and you’ll see that it’s the same
+reason Microsoft Vista is selling so poorly, and it’s the same issue I wrote
+about when I referred to the Raymond Chen camp (pragmatists) at Microsoft vs.
+the MSDN camp (idealists), the MSDN camp having won, and now nobody can figure
+out where their favorite menu commands went in Microsoft Office 2007, and
+nobody wants Vista, and it’s all the same debate: whether you are an Idealist
+(”red”) or a Pragmatist (”blue”).
+
+    -- Joel Spolsky
+    -- Martian Headsets ( http://www.joelonsoftware.com/items/2008/03/17.html )
+
+[ia005@brki167-lnx-4 lab02]$ ./stats-client brki167-lnx-4 14002 
+Reply from the server: The cookie with the highest frequency is: 
+That’s why I can’t take sides on this issue and I’m not going to. But every
+working software developer should understand, at least, how standards work,
+how standards should work, how we got into this mess, so I want to try to
+explain a little bit about the problem here, and you’ll see that it’s the same
+reason Microsoft Vista is selling so poorly, and it’s the same issue I wrote
+about when I referred to the Raymond Chen camp (pragmatists) at Microsoft vs.
+the MSDN camp (idealists), the MSDN camp having won, and now nobody can figure
+out where their favorite menu commands went in Microsoft Office 2007, and
+nobody wants Vista, and it’s all the same debate: whether you are an Idealist
+(”red”) or a Pragmatist (”blue”).
+
+    -- Joel Spolsky
+    -- Martian Headsets ( http://www.joelonsoftware.com/items/2008/03/17.html )
+
+ The freuency is: 1. 
