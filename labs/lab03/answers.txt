@@ -1,0 +1,187 @@
+4.1
+1. My Browser runs HTTP 1.1 .
+The server runs HTTP 1.1
+
+2.Accept-Language: en-US,en;q=0.5\r\n
+
+3.My computer: Source: 172.20.20.24 (172.20.20.24)
+  The server: Destination: 128.119.245.12 (128.119.245.12)
+4. 200 OK status code
+6698	9.364533533	128.119.245.12	172.20.20.24	HTTP	798	HTTP/1.1 200 OK  (text/html)
+
+5. Last-Modified: Tue, 09 Feb 2016 06:59:01 GMT\r\n
+
+6. Length from server to browser is 798
+
+7. Accept-Language/ Accept-Encoding
+
+8. No
+
+9. Yes. The details in the line based text data portion of the response is the same content on my web.
+
+10. Yes
+If-Modified-Since: Fri, 12 Feb 2016 06:59:01 GMT\r\n
+If-None-Match: "173-52b8d33b6d7ca"\r\n
+Cache-Control: max-age=0\r\n
+
+11. Status Code: 304
+Response Phrase: Not modified
+
+No. Since the file returned previously was the same as the current state. The server didn't return anything.
+12. 1
+Packet No: 4404
+13. 4413
+14. 200 OK
+
+16. 4
+Full request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
+Full request URI: http://manic.cs.umass.edu/~kurose/cover_5th_ed.jpg
+Full request URI: http://www.pearsonhighered.com/assets/hip/us/hip_us_pearsonhighered/images/pearson_logo.gif
+Full request URI: http://caite.cs.umass.edu/~kurose/cover_5th_ed.jpg
+
+17. It probably did it in parallel. This is because in the packet trace I see that the status codes of some requests were not returned before other requests were sent(i.e some requests were sent in blocks, multiple GET requests)
+
+4.2 
+7.1 I found only the request to the Umass server.
+7.2 The request from my webclient to the Umass server showed up in the packet trace but the request to my local server is not visible even though requests to the local server are returned. 
+
+4.2b
+1. 134.82.9.147
+
+2. It is used by Bucknell.
+Current IP Range:	134.82.62.0 - 134.82.62.255	
+IP Range Location:	USA,    Pennsylvania,    Lewisburg
+IP Owner:	 Bucknell University
+Owner Full IP Range:	
+134.82.0.0 - 134.82.255.255
+Owner Address:	Library And Information Technology, 101 Computer Center, Lewisburg, PA, 17837, US
+Owner Country:	USA
+Owner Phone:	+1-570-577-1795
+Owner Website: 	webc.bucknell.edu
+All Owner IP Ranges:	  134.82.0.0 - 134.82.255.255
+All Owner CIDR:	  134.82.0.0/16
+All Owner IP Reverse DNS (Host)s:	  sub100-144.bucknell.edu
+ASN: 	AS40591
+Whois Record Created: 	18 May 1989
+Whois Record Updated: 	24 Sep 2011
+
+3. No.     Time           Source                Destination           Protocol Length Info
+   1604 36.079560      172.20.2.2            172.20.20.24          DNS      170    Standard query response 0x882a  A 134.82.9.147
+
+Frame 1604: 170 bytes on wire (1360 bits), 170 bytes captured (1360 bits)
+    WTAP_ENCAP: 1
+    Arrival Time: Feb 12, 2016 23:37:37.993210000 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1455320257.993210000 seconds
+    [Time delta from previous captured frame: 0.000025000 seconds]
+    [Time delta from previous displayed frame: 0.000025000 seconds]
+    [Time since reference or first frame: 36.079560000 seconds]
+    Frame Number: 1604
+    Frame Length: 170 bytes (1360 bits)
+    Capture Length: 170 bytes (1360 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:udp:dns]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: BrocadeC_22:31:75 (50:eb:1a:22:31:75), Dst: 02:00:ac:14:14:18 (02:00:ac:14:14:18)
+    Destination: 02:00:ac:14:14:18 (02:00:ac:14:14:18)
+        Address: 02:00:ac:14:14:18 (02:00:ac:14:14:18)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: BrocadeC_22:31:75 (50:eb:1a:22:31:75)
+        Address: BrocadeC_22:31:75 (50:eb:1a:22:31:75)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 172.20.2.2 (172.20.2.2), Dst: 172.20.20.24 (172.20.20.24)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 156
+    Identification: 0xe9c0 (59840)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 63
+    Protocol: UDP (17)
+    Header checksum: 0x234e [correct]
+        [Good: True]
+        [Bad: False]
+    Source: 172.20.2.2 (172.20.2.2)
+    Destination: 172.20.20.24 (172.20.20.24)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 43364 (43364)
+    Source port: domain (53)
+    Destination port: 43364 (43364)
+    Length: 136
+    Checksum: 0x2b8c [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 1601]
+    [Time: 0.000650000 seconds]
+    Transaction ID: 0x882a
+    Flags: 0x8580 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .1.. .... .... = Authoritative: Server is an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 2
+    Queries
+        linuxremote1.bucknell.edu: type A, class IN
+            Name: linuxremote1.bucknell.edu
+            Type: A (Host address)
+            Class: IN (0x0001)
+    Answers
+        linuxremote1.bucknell.edu: type A, class IN, addr 134.82.9.147
+            Name: linuxremote1.bucknell.edu
+            Type: A (Host address)
+            Class: IN (0x0001)
+            Time to live: 1 day
+            Data length: 4
+            Addr: 134.82.9.147 (134.82.9.147)
+    Authoritative nameservers
+        bucknell.edu: type NS, class IN, ns dns.bucknell.edu
+            Name: bucknell.edu
+            Type: NS (Authoritative name server)
+            Class: IN (0x0001)
+            Time to live: 1 hour
+            Data length: 6
+            Name Server: dns.bucknell.edu
+        bucknell.edu: type NS, class IN, ns dns2.bucknell.edu
+            Name: bucknell.edu
+            Type: NS (Authoritative name server)
+            Class: IN (0x0001)
+            Time to live: 1 hour
+            Data length: 7
+            Name Server: dns2.bucknell.edu
+    Additional records
+        dns.bucknell.edu: type A, class IN, addr 134.82.7.253
+            Name: dns.bucknell.edu
+            Type: A (Host address)
+            Class: IN (0x0001)
+            Time to live: 1 hour
+            Data length: 4
+            Addr: 134.82.7.253 (134.82.7.253)
+        dns2.bucknell.edu: type A, class IN, addr 134.82.24.4
+            Name: dns2.bucknell.edu
+            Type: A (Host address)
+            Class: IN (0x0001)
+            Time to live: 1 hour
+            Data length: 4
+            Addr: 134.82.24.4 (134.82.24.4)
+
+
