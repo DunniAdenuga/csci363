@@ -46,24 +46,9 @@ Full request URI: http://caite.cs.umass.edu/~kurose/cover_5th_ed.jpg
 7.2 The request from my webclient to the Umass server showed up in the packet trace but the request to my local server is not visible even though requests to the local server are returned. 
 
 4.2b
-1. 134.82.9.147
+1.172.20.2.2
 
-2. It is used by Bucknell.
-Current IP Range:	134.82.62.0 - 134.82.62.255	
-IP Range Location:	USA,    Pennsylvania,    Lewisburg
-IP Owner:	 Bucknell University
-Owner Full IP Range:	
-134.82.0.0 - 134.82.255.255
-Owner Address:	Library And Information Technology, 101 Computer Center, Lewisburg, PA, 17837, US
-Owner Country:	USA
-Owner Phone:	+1-570-577-1795
-Owner Website: 	webc.bucknell.edu
-All Owner IP Ranges:	  134.82.0.0 - 134.82.255.255
-All Owner CIDR:	  134.82.0.0/16
-All Owner IP Reverse DNS (Host)s:	  sub100-144.bucknell.edu
-ASN: 	AS40591
-Whois Record Created: 	18 May 1989
-Whois Record Updated: 	24 Sep 2011
+2. It is used by Bucknell to allocate virtual memory nodes.
 
 3. No.     Time           Source                Destination           Protocol Length Info
    1604 36.079560      172.20.2.2            172.20.20.24          DNS      170    Standard query response 0x882a  A 134.82.9.147
