@@ -8,3 +8,23 @@ P1.2: Very good!
 P2: Very good!
 P3.1: Very good! Where you said "the general webpage acted as the server" really should be just "web server." Pages don't act as a server.
 P3.2: Very good!
+
+Lab2:
+Grade: 16/20
+Comments:
+5/8 P1: The basic function works. But the client results in "segmentation fault"
+--------------------------------------------------------------
+    -- Joel Spolsky
+    -- Seven steps to remarkable customer service ( http://www.joelonsoftware.com/articles/customerservice.html )
+
+Segmentation fault
+[xmeng@polaris lab02]$ 
+------------------------------------------------------------
+I think the reason for the seg fault is that you didn't terminate the string after readn(s, buf, size). You should have done after the readn() the following.
+buf[size] = 0;
+
+In addition, it seems that the fortune server always returns one fix piece of fortune.
+
+5/6 P2: Very good, though the same seg fault issue exists.
+
+6/6 P3: Good!
