@@ -1,0 +1,15 @@
+Problem 1.1
+Read from the socket into the address &(buf[total_count]) starting from the last place point that was read into  a maximum size
+
+Problem 1.2 
+(struct node_t) contains 288 bytes. This is because it contains other data types in itself such as the integer, double, a character array(String), a character and a pointer of its own datatype and has to allocate space for each of them.
+
+Problem 1.3
+
+    write(s, current, 288);
+After making the node with the String data, int length and double rate. I sent the data using the write function to the socket descriptor specifying size.  
+Then, on the receiver side, I use the read function to read from the socket descriptor a struct node_t, into a variable. Then, I printed it to stdout.
+
+Problem 1.4
+
+To send the whole list, I first sent the number of nodes to the receiver. Then I read the content
