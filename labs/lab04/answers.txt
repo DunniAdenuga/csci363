@@ -12,4 +12,4 @@ Then, on the receiver side, I use the read function to read from the socket desc
 
 Problem 1.4
 
-To send the whole list, I first sent the number of nodes to the receiver. Then I read the content
+To send the whole list, I first sent the number of nodes to the receiver. Then I read the content of each node using a temporary buffer in a while loop. 
