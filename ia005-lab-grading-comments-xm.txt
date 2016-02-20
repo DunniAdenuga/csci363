@@ -28,3 +28,7 @@ In addition, it seems that the fortune server always returns one fix piece of fo
 5/6 P2: Very good, though the same seg fault issue exists.
 
 6/6 P3: Good!
+
+Lab3:
+Grade: 20/20
+Comments: Very good!
