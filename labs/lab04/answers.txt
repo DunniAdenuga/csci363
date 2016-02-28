@@ -12,4 +12,29 @@ Then, on the receiver side, I use the read function to read from the socket desc
 
 Problem 1.4
 
-To send the whole list, I first sent the number of nodes to the receiver. Then I read the content of each node using a temporary buffer in a while loop. 
+To send the whole list, I first sent the number of nodes to the receiver. Then I read the content of each node using a temporary buffer in a while loop.
+
+Problem 2
+
+[ia005@linuxremote1 lab04]$ ./test-checksum 
+result 1 is good 65533
+result 2 is good 46397
+result 3 is good 17417
+
+Problem 3.1
+The maximum value a UDP packet can carry is 2^16. Having a MAXUDPSIZE of 65527 means the data can occupy that much space and there's some space for the struct header variable.
+Defining an array means the memory would be contiguous but usng malloc does not necessarily ensure this
+
+Explain why you have to initalize the checksum in the original UDP packet to be zero. 
+Problem 3.2
+It is better to build the packet first then, computing the checksum, so you have the right size for the header too.
+
+Setting to zero removes any previous data in that attribute, but you want to save its initial value in a variable. Then, you calculate the checksum of the data actually sent and compare it to the initial value to determine if the data is corrupted. 
+
+Problem 3.3
+(added "." to the data I received)
+[ia005@linuxremote1 lab04]$ ./udp-sender 
+Data is corrupted.
+(send the message back as it was received)
+[ia005@linuxremote1 lab04]$ ./udp-sender 
+Data is: The Lady Morgana & Merlin
