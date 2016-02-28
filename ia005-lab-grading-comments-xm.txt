@@ -32,3 +32,18 @@ In addition, it seems that the fortune server always returns one fix piece of fo
 Lab3:
 Grade: 20/20
 Comments: Very good!
+
+Lab4:
+Grade: 14/20
+Comments:
+4/6 P 1
+    P 1.1: Good.
+    P 1.2: Good.
+    P 1.3: It is better to use sizeof(struct node_t) instead of a constant 288.
+    P 1.4: How do you read the node from the receiving side?
+    In addition, the program pair list-sender.c and list-receiver.c do not work correctly. Part of the reason is you didn't set the field nodeList->len correctly.
+
+5/6 P 2: While the program and results are correct, you should have included a copy of the screen output in your answers.txt.
+
+5/8 P 3: You didn't answer questions P 3.1 and 3.2.
+
