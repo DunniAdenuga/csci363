@@ -142,7 +142,7 @@ int main(int argc, char* argv[]) {
   //free(ptrp);
   //free(&sad);
   
-  free(buf);
+  //free(buf);
   // Terminate the client program gracefully. 
   exit(0);
 }
