@@ -35,7 +35,10 @@ Comments: Very good!
 
 Lab4:
 Grade: 14/20
-Comments:
+Updated grade: 17/20
+Comments: Thank you for the re-submission. Your list-sender/receiver works in part. See the output that I copied below. Your answer to Probelm 3.1 is not quite to the point. The UDP length field is a 16-bit unit. You answered that part correctly, 2^16 - 1 or 65535, is the maximum value. But why 65527? The reason is that UDP header takes up 8 bytes, thus, the data portion is at most 65535 - 8 = 65527. 
+
+I updated the grade for your answer for P 3.1 and 3.2
 4/6 P 1
     P 1.1: Good.
     P 1.2: Good.
@@ -43,7 +46,21 @@ Comments:
     P 1.4: How do you read the node from the receiving side?
     In addition, the program pair list-sender.c and list-receiver.c do not work correctly. Part of the reason is you didn't set the field nodeList->len correctly.
 
+======================================================
+[xmeng@polaris lab04]$ ./list-sender
+-65531
+sent : 5
+sent : If you think in terms of a year, plant a seed; if in terms of ten years, plant trees; if in terms of 100 years, teach the people.
+sent : No matter how busy you may think you are, you must find time for reading, or surrender yourself to self-chosen ignorance.
+sent : Do not impose on others what you yourself do not desire.
+sent : Our greatest glory is not in never falling, but in rising every time we fall.
+sent : Wisdom, compassion, and courage are the three universally recognized moral qualities of human beings.
+[xmeng@polaris lab04]$ 
+
+======================================================
 5/6 P 2: While the program and results are correct, you should have included a copy of the screen output in your answers.txt.
+Updated P 2: 6/6 Thank you the submitted screen shot. You could've just recorded text.
 
 5/8 P 3: You didn't answer questions P 3.1 and 3.2.
+Updated P 3 grade: 7/8
 
