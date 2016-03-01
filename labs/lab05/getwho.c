@@ -15,8 +15,13 @@ int main(int argc, char *argv[]) {
   struct utmp * one_user;
   setutent();
   one_user = getutent();
+
   while (one_user != NULL) {
     /* TODO: get and print the user name from the structure */
+    if(one_user->ut_type == USER_PROCESS)
+      {
+	printf("%s\n", one_user->ut_user);
+      }
     count ++;
     one_user = getutent();
   }
