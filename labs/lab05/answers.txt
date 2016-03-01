@@ -1,0 +1,7 @@
+FD_ZERO() and FD_SET() do, what the system call select() does
+
+FD_ZERO clears a file descriptor set by settting all the bits in it to zero.
+
+FD_SET takes in a file desciptor and a file descriptor set(a fixed buffer size of file descriptors a program can watch out for) and adds this file descriptor to the set.
+
+select() checks to see if a file descriptor is ready, e.g ready to be read, it then returns the maximum number of file descriptors in all the sets it monitors.
