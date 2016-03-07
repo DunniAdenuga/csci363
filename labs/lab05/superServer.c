@@ -11,20 +11,24 @@
 #include <string.h>
 #include <unistd.h>
 #include "tcplib.h"
+#include <utmp.h>
+#include <time.h>
 
 #define TIMEPORT 14001
 #define ECHO_PORT 14002
+#define WHO 14102
 #define STDIN 0
 
 /* services supported */
 void echoService(int);
 void timeService(int);
 int  socketUDPServer(int);
+void getwhoService(int);
 
 int main(int argc, char *argv[])   {
 
-  int timeSock, echoSock;   /* sockets on which the server listens */
-  int timeWork, echoWork;   /* sockets where the service is provided */
+  int timeSock, echoSock, whoSock;   /* sockets on which the server listens */
+  int timeWork, echoWork, whoWork;   /* sockets where the service is provided */
   int nfound;               /* number of connection requests found */
   int maxfdp1;              /* maximum number the server need to check */
 
@@ -33,7 +37,7 @@ int main(int argc, char *argv[])   {
   /* create two sockets */
   timeSock = socketUDPServer(TIMEPORT);
   echoSock = socketServer(ECHO_PORT);
-
+  whoSock = socketServer(WHO);
   /* initialize the readmask to be all zero */
   FD_ZERO(&readmask);
   /* TODO: call proper macro to initalize the fd_set readmask variable */
@@ -48,7 +52,8 @@ int main(int argc, char *argv[])   {
      */
     FD_SET(timeSock, &readmask);
     FD_SET(echoSock, &readmask);
-    maxfdp1 = echoSock + 1;
+    FD_SET(whoSock, &readmask);
+    maxfdp1 = whoSock + 1;
 
     /* check how many are ready */
 
@@ -65,6 +70,7 @@ int main(int argc, char *argv[])   {
     /* check which socket is read */
     int timeReady = 0;
     int echoReady = 0;
+    int whoReady = 0; 
     /* TODO: check if timeSock is ready, set the value in timeReady */
     if(FD_ISSET(timeSock, &readmask)){
 	timeReady = 1;
@@ -73,11 +79,17 @@ int main(int argc, char *argv[])   {
     if(FD_ISSET(echoSock, &readmask)){
 	echoReady = 1;
       }
+    if(FD_ISSET(whoSock, &readmask)){
+	whoReady = 1;
+      }
       if (timeReady){
       timeWork = timeSock;
       }
       if (echoReady){
       echoWork = acceptConn(echoSock);
+      }
+      if (whoReady){
+      whoWork = acceptConn(whoSock);
       }
 
     int pid = fork();
@@ -94,6 +106,12 @@ int main(int argc, char *argv[])   {
 	fflush(stdout);
 	echoService(echoWork);
 	shutdown(echoWork, 2);
+      }
+      if (whoReady) {
+	printf("getwho service requested\n");
+	fflush(stdout);
+	getwhoService(whoWork);
+	//shutdown(whoWork, 2);
       }
       exit(0);
     } else { // end of child process
@@ -148,6 +166,47 @@ void echoService(int sock)  {
   buf[n] = 0;
   strcat(echo_buf, buf);
   write(sock, echo_buf, strlen(echo_buf));
+}
+
+/* echo service code */
+void getwhoService(int sock)  {
+  
+  char buf[BUFSIZ+1];
+  int count = 0;
+  char word[50];
+  int size;
+  read(sock, &size, 4);
+  read(sock, word, size);
+  printf("%s\n", word);
+  struct utmp * one_user;
+  setutent();
+  one_user = getutent();
+
+  while (one_user != NULL) {
+    /* TODO: get and print the user name from the structure */
+    if(one_user->ut_type == USER_PROCESS)
+      {
+	strcat(buf, one_user->ut_user);
+	strcat(buf, "\n");
+      }
+    count ++;
+    one_user = getutent();
+  }
+
+  endutent();
+
+  strcat(buf, "Number of entries encountered: ");
+  char* inter = (char *)malloc(10);
+  sprintf(inter, "%d", count);
+  strcat(buf, inter);
+  //strcat(buf, "\n");
+  
+  int len = strlen(buf);
+  
+  buf[len] = 0;
+  write(sock, &len, 4);
+  write(sock, buf, len);
+  close(sock);
 }
 
 /*

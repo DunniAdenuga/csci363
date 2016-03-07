@@ -5,3 +5,46 @@ FD_ZERO clears a file descriptor set by settting all the bits in it to zero.
 FD_SET takes in a file desciptor and a file descriptor set(a fixed buffer size of file descriptors a program can watch out for) and adds this file descriptor to the set.
 
 select() checks to see if a file descriptor is ready, e.g ready to be read, it then returns the maximum number of file descriptors in all the sets it monitors.
+
+[ia005@linuxremote1 lab05]$ ./superServer 
+echo service requested
+getwho service requested
+getwhoservice
+time service requested
+bytes received 4
+time service requested
+
+
+[ia005@linuxremote1 lab05]$ ./echoClient linuxremote1
+Type a message : hola!
+Echo: hola!
+
+[ia005@linuxremote1 lab05]$ ./getwhoClient linuxremote1
+ama018
+ama018
+kvollmay
+kvollmay
+jtc015
+mpa009
+mpa009
+jdreese
+ama018
+rjc042
+jrs095
+phys211
+ia005
+mpa009
+ia005
+lwittie
+zms002
+ama018
+kvollmay
+jdreese
+ty006
+ama018
+ia005
+kvollmay
+fertig
+sgm010
+Number of entries encountered: 152
+[ia005@linuxremote1 lab05]$ 

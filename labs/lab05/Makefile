@@ -2,7 +2,7 @@ CC   = gcc
 H    = tcplib.h
 LIB  = #-lnsl -lsocket
 CFLG = -g -Wall
-ALL  = superServer timeClient-udp echoClient getwho
+ALL  = superServer timeClient-udp echoClient getwho getwhoClient
 
 all: $(ALL)
 
@@ -17,6 +17,9 @@ timeClient-udp: timeClient-udp.o
 
 echoClient: echoClient.o tcplib.o
 	$(CC) -o echoClient echoClient.o tcplib.o $(LIB)
+
+getwhoClient: getwhoClient.o tcplib.o
+	$(CC) -o getwhoClient getwhoClient.o tcplib.o $(LIB)
 
 getwho: getwho.o
 	$(CC) -o getwho getwho.o
