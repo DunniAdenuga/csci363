@@ -1,0 +1,112 @@
+Screen output of compiling the programs on the Linux side with make.
+1. [ia005@linuxremote1 /nfs/unixspace/linux/accounts/student/i/ia005/csci363/labs/lab06/native]$ make
+gcc -c -Wall -g rshd.c
+gcc -o rshd rsh.o rshd.o shadow.o pwd.o tcplib.o -lcrypt -lreadline 
+gcc -c -Wall -g rshClient.c
+gcc -o rshClient rshClient.o tcplib.o -lcrypt -lreadline 
+
+2.Screen output of compiling the programs on the VM side with make.
+[root@mynode-720-24 cs363-lab06]# make
+gcc -c -Wall -g rsh.c
+gcc -c -Wall -g rshd.c
+gcc -c -Wall -g tcplib.c
+gcc -o rshd rsh.o rshd.o tcplib.o -lcrypt 
+#gcc -o rshClient rshClient.o tcplib.o -lcrypt -lreadline 
+gcc -c -Wall -g login.c
+gcc -c -Wall -g shadow.c
+gcc -c -Wall -g pwd.c
+gcc -o mlogin login.o shadow.o pwd.o -lcrypt 
+gcc -c -Wall -g mypasswd.c
+gcc -o mypasswd mypasswd.o shadow.o pwd.o -lcrypt 
+
+Screen output of running the client with the server running on a Linux machine.
+3. [ia005@linuxremote1 /nfs/unixspace/linux/accounts/student/i/ia005/csci363/labs/lab06/native]$ ./rshd
+Login Correct
+
+
+[ia005@brki167-lnx-2 ~/csci363/labs/lab06/native]$ ./rshClient linuxremote1CSCI363 login: dunni
+Password: sine30
+linuxremote1% ls
+linuxremote1% 
+login.c
+login.o
+Makefile
+Makefile~
+mlogin
+mypasswd
+mypasswd.c
+mypasswd.o
+passwd
+pwd.c
+pwd.h
+pwd.o
+rsh.c
+rshClient
+rshClient.c
+rshClient.c~
+rshClient.o
+rshd
+rshd.c
+rshd.c~
+rshd.o
+rsh.o
+shadow
+shadow.c
+shadow.h
+shadow.o
+tcplib.c
+tcplib.h
+tcplib.o
+testpass.c
+testpw.c
+
+
+4. 
+[root@mynode-720-24 cs363-lab06]# ./rshd
+Login Incorrect
+Login Incorrect
+Login Correct
+
+[ia005@brki167-lnx-2 ~/csci363/labs/lab06/native]$ ./rshClient mynode-720-24
+CSCI363 login: bo
+Password: re
+CSCI363 login: gho
+Password: ty
+CSCI363 login: jdoe
+Password: love
+mynode-720-24% cd /
+mynode-720-24% ls
+mynode-720-24% 
+bin
+boot
+Conditional-GET
+dev
+dfg
+DNS-Wireshark
+etc
+feb9-2016-xm
+home
+HTML
+httpCapture
+lib
+lib64
+lost+found
+media
+mnt
+opt
+problem4-1-2WireShark-xm
+problem4-1WireShark-xm
+proc
+Retrieving-Long-Documents
+root
+sbin
+selinux
+srv
+stuffFeb9
+sys
+tmp
+usr
+var
+mynode-720-24% 
+
+
