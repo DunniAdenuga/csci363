@@ -68,3 +68,7 @@ Updated P 3 grade: 7/8
 Lab5
 Grade: 20/20
 Comments: Very good.
+
+Lab6:
+Grade: 17/20
+Comments: Good work in general. However you didn't turn off the echo on the client side so that your password is echoed while being typed.
