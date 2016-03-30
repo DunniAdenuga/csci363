@@ -1,0 +1,66 @@
+Raw  sockets  allow new IPv4 protocols to be implemented in user space.
+       A raw socket receives or sends the  raw  datagram  not  including  link
+       level headers.
+tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
+       udp_socket = socket(AF_INET, SOCK_DGRAM, 0);
+       raw_socket = socket(AF_INET, SOCK_RAW, protocol);
+This means raw sockets are usually only needed for new
+       protocols or protocols with no user interface (like ICMP).
+
+Traceroute Questions
+
+1. SOCK_RAW is a macro which when specified tells lets the socket application create raw sockets. IPROTO_ICMP is a type of protocol that can be used when creating a raw socket so, ICMP can be directly accessed.
+SOCK_RAW creates raw sockets while SOCK_DGRAM creates udp sockets and SOCK_STREAM creates tcp sockets. Also, SOCK_RAW is more low-level compared to SOCK_STREAM and SOCK_DGRAM.
+
+2. ip_hdr now points to whatever memory location buf was pointing to. The memory address of the variable ip_hdr is its previous memory address but it now contains buf's address .
+
+3. On a local machine, it says it cannot set HDRINCL. 
+IP_HDRINCL indicates if the ip header is included else the IPv4 layer generates one.
+Yes. The ip header is created in the while loop.
+
+4. inet_pton(int af, const char *src, void *dst);
+This  function converts the character string src into a network address
+       structure in the af address family, then  copies  the  network  address
+       structure  to dst.
+5. csum() calculates the checksum. The 
+The data it's used for is the ip header.
+
+6. The icmp_header now points to 20 spots after buf[0]'s address.
+It's (buf + 20) because the first 20 spaces are occupied by the ip header.
+
+7. ICMP_ECHO = 8
+code 0 has a different meaning depending on the type.
+For example:
+TYPE = 0 - Echo Reply sent by:
+code 0 = (no special meaning) host, router
+TYPE = 3 - Destination Unreachable sent by:
+code 0 = network unreachable router
+TYPE = 4 - Source Quench sent by:
+code 0 = datagram could not be received host, router or routed
+
+For this type 8, code 0 means No code.
+
+8. It means Echo reply.
+type 11: It means the time exceeded.
+
+9.char *inet_ntoa(struct in_addr inp);
+ The  inet_ntoa()  function converts the Internet host address inp, given in network byte order, to a string  in  IPv4  dotted-decimal  notation. 
+It returns a string value of IPv4 dotted-decimal notation of the parameter addr2.sin_addr, which is in network byte order.
+
+
+Ping Questions
+
+1. How the ICMP packet information is encapsulated in the IP packet.
+Have a generic buffer *buf. First few bytes stores the ip_header and some other bytes store the icmp_header.
+
+2.Which part of the program is responsible for periodically sending ICMP packet and how the timing is controlled.
+The sendto() function in the sendping file. If timing is enabled, we use gettimeofday to get the current time. 
+
+ 3.Which part of the program is responsible for receiving the packet as the result of ping.
+The recv_ping() function from the recv_ping.c file.
+
+4.Where and how the ICMP packet is built.
+The icmp packet is built in the sendping.c file by creating a struct icmp variable and assigning values to its members then it's sent.
+
+5.How the round trip time is computed.
+The current time at the time the packet is to be sent is gotten using gettimeofday and stored in icmp_data and the current time when we call pr_pack is gotten from gettimeofday too. Then, we subtract and calculate the round trip time using formula triptime = tv.tv_sec * 1000 + ((double)tv.tv_usec / 1000);
