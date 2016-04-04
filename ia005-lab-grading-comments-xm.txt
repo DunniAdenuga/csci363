@@ -72,3 +72,9 @@ Comments: Very good.
 Lab6:
 Grade: 17/20
 Comments: Good work in general. However you didn't turn off the echo on the client side so that your password is echoed while being typed.
+
+Lab7:
+Grade: 19/20
+Comments:
+Regading Question 2 of Ping, the sending of the packets is done through 'sendto()'. You answered this part of the question correctly. However, the timing is set through the use of a timer each time a packet is sent. You didn't point this out.
+
