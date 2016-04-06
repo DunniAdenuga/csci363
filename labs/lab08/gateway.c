@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
   struct sockaddr_in dest, from;//dest-sink, from - source
   struct hostent *hostptr;
   int fsize;
-  char *msg = (char *)malloc(BUFSIZE);
+  char *msg = (char *)malloc(MAX_UDP);
   int	sd, sd2;		                 // socket descriptor	       	
   int	gport, sport;		               // protocol port number		
   char	*host;		           // pointer to host name		

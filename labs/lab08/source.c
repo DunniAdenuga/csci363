@@ -7,13 +7,16 @@
 #include <netdb.h>
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include "crcmodel.h"
 
 #define BUFSIZE 1000
 #define MAX_UDP 65536
 
+unsigned int generate_crc(char * buffer, int len);
 int Socket(int domain, int type, int protocol);
 ssize_t Sendto(int sockfd, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen);
 
@@ -72,8 +75,12 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
   else{
-    buffer = (char *)malloc(len);
+    buffer = (char *)malloc(len + 2);
     read(fd, buffer, len);
+    unsigned int crc = generate_crc(buffer, len);
+    //printf("crc - %d\n", crc);
+    memcpy(&(buffer[len]), &crc, 2);
+    //printf("buffer - %s", buffer);
   }
   // Create a socket. 
   sd = Socket(AF_INET, SOCK_DGRAM, 0);
@@ -82,12 +89,41 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
   //strcat(buf, "Ile aye ese mefa");
-  int nbytes = Sendto(sd, buffer, len, 0, (struct sockaddr *)&dest, sizeof(dest));
+  int nbytes = Sendto(sd, buffer, len+2, 0, (struct sockaddr *)&dest, sizeof(dest));
   
   printf("Message sent to gateway in %d bytes\n", nbytes);
   close(fd);
   close(sd);
   return 0;
+}
+
+unsigned int generate_crc(char * buffer, int len){
+char   ch;
+cm_t   cm;
+p_cm_t p_cm = &cm;
+ p_cm->cm_width = 16;
+  p_cm->cm_poly  = 0x8005L;       // CRC16
+  //  p_cm->cm_poly  = 0x1021L;   // CRC-CCITT
+
+  /*
+   * parameter set-up ends
+   */
+
+  // one can initalize the proceeding bits wit 0s '0L' or 1s 'FFFFL'
+  p_cm->cm_init  = 0L;            
+  //  p_cm->cm_init  = 0xFFFFL;
+  p_cm->cm_refin = TRUE;
+  p_cm->cm_refot = TRUE;
+  p_cm->cm_xorot = 0L;
+
+  cm_ini(p_cm);
+
+  for (int i = 0; i < len; i ++) {
+    ch = buffer[i];
+    cm_nxt(p_cm, ch);
+  }
+  ulong crc = cm_crc(p_cm);
+  return crc;
 }
 
 int Socket(int domain, int type, int protocol){
