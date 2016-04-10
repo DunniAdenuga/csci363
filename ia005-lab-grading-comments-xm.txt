@@ -78,3 +78,10 @@ Grade: 19/20
 Comments:
 Regading Question 2 of Ping, the sending of the packets is done through 'sendto()'. You answered this part of the question correctly. However, the timing is set through the use of a timer each time a packet is sent. You didn't point this out.
 
+Lab8:
+Grade: 19/20
+Comments: Very good.
+Incorrect Makefile(?) I had to add elements in the Makefile to compile the program. Specificall, 'source' need to link with cmcmodel to generate the executable. For example, (this has to be done for all executables.)
+source: $(SOBJ)
+	$(CC) $(LFLAGS) $(SOBJ) -o source crcmodel.o
+
