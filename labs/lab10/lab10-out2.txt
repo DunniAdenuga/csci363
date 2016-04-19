@@ -1,0 +1,1205 @@
+======GLOBAL FILE  HEADER========================
+magic number a1b2c3d4 major verion 2 minor version 4
+maximum captured packet length 65535
+link layer type 1
+=================================================
+ === packet count 0 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0xc631 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2486 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4283tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 1 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 178
+Length of the original packet: 178
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 164 bytes
+packet ID, 0x9433 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5714 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 2 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0xc632 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2485 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4283tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 3 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 15994
+Length of the original packet: 15994
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 15980 bytes
+packet ID, 0xc633 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xe64b 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4283tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 4 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 570
+Length of the original packet: 570
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 556 bytes
+packet ID, 0xc63e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2281 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4283tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 5 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 15994
+Length of the original packet: 15994
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 15980 bytes
+packet ID, 0xc63f 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xe63f 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4283tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 6 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 570
+Length of the original packet: 570
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 556 bytes
+packet ID, 0xc64a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2275 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 7 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9434 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5777 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 8 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9435 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5776 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 9 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9436 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5775 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 10 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9437 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5780 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 11 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 14546
+Length of the original packet: 14546
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 14532 bytes
+packet ID, 0xc64b 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xebdb 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 12 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 562
+Length of the original packet: 562
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 548 bytes
+packet ID, 0xc655 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2272 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 13 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9438 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5773 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bbtcp ack bit: 256
+ === packet count 14 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9439 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x577e 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 15 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x943a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5771 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 16 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 126
+Length of the original packet: 126
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 112 bytes
+packet ID, 0x943b 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5740 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 17 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x943c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x577b 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 18 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 14546
+Length of the original packet: 14546
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 14532 bytes
+packet ID, 0xc656 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xebd0 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 19 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 482
+Length of the original packet: 482
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 468 bytes
+packet ID, 0xc660 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x22b7 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 20 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x943d 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x576e 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 21 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x943e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x576d 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 22 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x943f 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x576c 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 23 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9440 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5777 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 24 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 530
+Length of the original packet: 530
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 516 bytes
+packet ID, 0xc661 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2286 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 25 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9441 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5776 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 26 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 242
+Length of the original packet: 242
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 228 bytes
+packet ID, 0x9442 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x56c5 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 27 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 15994
+Length of the original packet: 15994
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 15980 bytes
+packet ID, 0xc662 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xe61c 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 28 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 570
+Length of the original packet: 570
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 556 bytes
+packet ID, 0xc66d 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2252 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 29 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 1394
+Length of the original packet: 1394
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 1380 bytes
+packet ID, 0xc66e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x1f19 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 30 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9443 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5768 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 31 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9444 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5767 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 32 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9445 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5772 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 33 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x9446 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5771 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 34 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 15994
+Length of the original packet: 15994
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 15980 bytes
+packet ID, 0xc66f 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xe60f 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4284tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 35 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 570
+Length of the original packet: 570
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 556 bytes
+packet ID, 0xc67a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2245 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 36 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 1514
+Length of the original packet: 1514
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 1500 bytes
+packet ID, 0xc67b 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x1e94 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 37 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 442
+Length of the original packet: 442
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 428 bytes
+packet ID, 0xc67c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x22c3 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 38 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 114
+Length of the original packet: 114
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 100 bytes
+packet ID, 0x9447 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5740 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 39 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9448 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5763 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 40 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x9449 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5762 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 41 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 86
+Length of the original packet: 86
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 72 bytes
+packet ID, 0x944a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5759 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bctcp ack bit: 256
+ === packet count 42 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x944b 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5760 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bdtcp ack bit: 256
+ === packet count 43 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x944c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x576b 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bdtcp ack bit: 256
+ === packet count 44 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 15994
+Length of the original packet: 15994
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 15980 bytes
+packet ID, 0xc67d 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xe601 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 45 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 570
+Length of the original packet: 570
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 556 bytes
+packet ID, 0xc688 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x2237 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 46 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 1514
+Length of the original packet: 1514
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 1500 bytes
+packet ID, 0xc689 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x1e86 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 47 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 442
+Length of the original packet: 442
+======ETHERNET HEADER============================
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address: 02:00:ac:14:14:03
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 428 bytes
+packet ID, 0xc68a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x22b5 
+IP source address - 172.20.20.3
+IP destination address - 134.82.9.147
+============== TCP Packet ================
+tcp source port: 22tcp dest port: 58533tcp sequence number: 4285tcp acknowledgement number: 0x48ectcp ack bit: 256
+ === packet count 48 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x944d 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x575e 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bdtcp ack bit: 256
+ === packet count 49 === 
+time captured  Sun Nov 29 16:44:27 2015
+
+Number of bytes captured: 78
+Length of the original packet: 78
+======ETHERNET HEADER============================
+ Destination address: 02:00:ac:14:14:03
+ Source address: 50:eb:1a:20:cb:fc
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x1000
+header length, 5 words
+packet length, 64 bytes
+packet ID, 0x944e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 63 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x575d 
+IP source address - 134.82.9.147
+IP destination address - 172.20.20.3
+============== TCP Packet ================
+tcp source port: 58533tcp dest port: 22tcp sequence number: 18668tcp acknowledgement number: 0x10bdtcp ack bit: 256

@@ -1,0 +1,1505 @@
+======GLOBAL FILE  HEADER========================
+magic number a1b2c3d4 major verion 2 minor version 4
+maximum captured packet length 65535
+link layer type 1
+=================================================
+ === packet count 0 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0xc631
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2486
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bbb655
+    acknowledgement number 0x48ecb6fa
+    acknowledgement true/false 1
+
+ === packet count 1 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 178
+ length of packet 178
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 164 bytes
+ IP packet ID : 0x9433
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5714
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb6fa
+    acknowledgement number 0x10bbb655
+    acknowledgement true/false 1
+
+ === packet count 2 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0xc632
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2485
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bbb655
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 3 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 15994
+ length of packet 15994
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 15980 bytes
+ IP packet ID : 0xc633
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xe64b
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bbb655
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 4 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 570
+ length of packet 570
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 556 bytes
+ IP packet ID : 0xc63e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2281
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bbf48d
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 5 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 15994
+ length of packet 15994
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 15980 bytes
+ IP packet ID : 0xc63f
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xe63f
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bbf685
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 6 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 570
+ length of packet 570
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 556 bytes
+ IP packet ID : 0xc64a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2275
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bc34bd
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 7 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9434
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5777
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bbb655
+    acknowledgement true/false 1
+
+ === packet count 8 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9435
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5776
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bbe395
+    acknowledgement true/false 1
+
+ === packet count 9 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9436
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5775
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bbeee5
+    acknowledgement true/false 1
+
+ === packet count 10 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9437
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5780
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bbf685
+    acknowledgement true/false 1
+
+ === packet count 11 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 14546
+ length of packet 14546
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 14532 bytes
+ IP packet ID : 0xc64b
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xebdb
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bc36b5
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 12 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 562
+ length of packet 562
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 548 bytes
+ IP packet ID : 0xc655
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2272
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bc6f45
+    acknowledgement number 0x48ecb76a
+    acknowledgement true/false 1
+
+ === packet count 13 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9438
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5773
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bbf685
+    acknowledgement true/false 1
+
+ === packet count 14 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9439
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x577e
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bc36b5
+    acknowledgement true/false 1
+
+ === packet count 15 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x943a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5771
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bc36b5
+    acknowledgement true/false 1
+
+ === packet count 16 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 126
+ length of packet 126
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 112 bytes
+ IP packet ID : 0x943b
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5740
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb76a
+    acknowledgement number 0x10bc36b5
+    acknowledgement true/false 1
+
+ === packet count 17 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x943c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x577b
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bc7135
+    acknowledgement true/false 1
+
+ === packet count 18 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 14546
+ length of packet 14546
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 14532 bytes
+ IP packet ID : 0xc656
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xebd0
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bc7135
+    acknowledgement number 0x48ecb79a
+    acknowledgement true/false 1
+
+ === packet count 19 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 482
+ length of packet 482
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 468 bytes
+ IP packet ID : 0xc660
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x22b7
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bca9c5
+    acknowledgement number 0x48ecb79a
+    acknowledgement true/false 1
+
+ === packet count 20 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x943d
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x576e
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bc7135
+    acknowledgement true/false 1
+
+ === packet count 21 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x943e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x576d
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bc9325
+    acknowledgement true/false 1
+
+ === packet count 22 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x943f
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x576c
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bc9e75
+    acknowledgement true/false 1
+
+ === packet count 23 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9440
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5777
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bcab65
+    acknowledgement true/false 1
+
+ === packet count 24 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 530
+ length of packet 530
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 516 bytes
+ IP packet ID : 0xc661
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2286
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bcab65
+    acknowledgement number 0x48ecb79a
+    acknowledgement true/false 1
+
+ === packet count 25 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9441
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5776
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bcad35
+    acknowledgement true/false 1
+
+ === packet count 26 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 242
+ length of packet 242
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 228 bytes
+ IP packet ID : 0x9442
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x56c5
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb79a
+    acknowledgement number 0x10bcad35
+    acknowledgement true/false 1
+
+ === packet count 27 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 15994
+ length of packet 15994
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 15980 bytes
+ IP packet ID : 0xc662
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xe61c
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bcad35
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 28 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 570
+ length of packet 570
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 556 bytes
+ IP packet ID : 0xc66d
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2252
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bceb6d
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 29 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 1394
+ length of packet 1394
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 1380 bytes
+ IP packet ID : 0xc66e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x1f19
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bced65
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 30 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9443
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5768
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb84a
+    acknowledgement number 0x10bcad35
+    acknowledgement true/false 1
+
+ === packet count 31 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9444
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5767
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb84a
+    acknowledgement number 0x10bcc3d5
+    acknowledgement true/false 1
+
+ === packet count 32 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9445
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5772
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb84a
+    acknowledgement number 0x10bced65
+    acknowledgement true/false 1
+
+ === packet count 33 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x9446
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5771
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb84a
+    acknowledgement number 0x10bcf295
+    acknowledgement true/false 1
+
+ === packet count 34 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 15994
+ length of packet 15994
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 15980 bytes
+ IP packet ID : 0xc66f
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xe60f
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bcf295
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 35 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 570
+ length of packet 570
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 556 bytes
+ IP packet ID : 0xc67a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2245
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd30cd
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 36 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 1514
+ length of packet 1514
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 1500 bytes
+ IP packet ID : 0xc67b
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x1e94
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd32c5
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 37 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 442
+ length of packet 442
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 428 bytes
+ IP packet ID : 0xc67c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x22c3
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd386d
+    acknowledgement number 0x48ecb84a
+    acknowledgement true/false 1
+
+ === packet count 38 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 114
+ length of packet 114
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 100 bytes
+ IP packet ID : 0x9447
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5740
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb84a
+    acknowledgement number 0x10bcf295
+    acknowledgement true/false 1
+
+ === packet count 39 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9448
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5763
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bcf295
+    acknowledgement true/false 1
+
+ === packet count 40 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x9449
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5762
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bcfde5
+    acknowledgement true/false 1
+
+ === packet count 41 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 86
+ length of packet 86
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 72 bytes
+ IP packet ID : 0x944a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5759
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bcfde5
+    acknowledgement true/false 1
+
+ === packet count 42 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x944b
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x5760
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bd32c5
+    acknowledgement true/false 1
+
+ === packet count 43 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x944c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x576b
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bd39e5
+    acknowledgement true/false 1
+
+ === packet count 44 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 15994
+ length of packet 15994
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 15980 bytes
+ IP packet ID : 0xc67d
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xe601
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd39e5
+    acknowledgement number 0x48ecb87a
+    acknowledgement true/false 1
+
+ === packet count 45 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 570
+ length of packet 570
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 556 bytes
+ IP packet ID : 0xc688
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x2237
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd781d
+    acknowledgement number 0x48ecb87a
+    acknowledgement true/false 1
+
+ === packet count 46 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 1514
+ length of packet 1514
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 1500 bytes
+ IP packet ID : 0xc689
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x1e86
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd7a15
+    acknowledgement number 0x48ecb87a
+    acknowledgement true/false 1
+
+ === packet count 47 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 442
+ length of packet 442
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:e0:52:b4:ca:dc
+ Source address = 02:00:ac:14:14:03
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 428 bytes
+ IP packet ID : 0xc68a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x22b5
+ Source IP addr = 172.20.20.3
+ Destination IP addr = 134.82.9.147
+TCP packet ->
+    source port 22
+    destination port 58533
+    sequence number 0x10bd7fbd
+    acknowledgement number 0x48ecb87a
+    acknowledgement true/false 1
+
+ === packet count 48 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x944d
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x575e
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bd39e5
+    acknowledgement true/false 1
+
+ === packet count 49 === 
+Frame information:
+ captured time Sun Nov 29 16:44:27 2015
+ bytes captured 78
+ length of packet 78
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 02:00:ac:14:14:03
+ Source address = 50:eb:1a:20:cb:fc
+    Vendor: (null)
+ ============== IP Header ================
+ IP Type of Service (tos) 0x10
+ IP header length : 5 words
+ IP packet length : 64 bytes
+ IP packet ID : 0x944e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 63
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x575d
+ Source IP addr = 134.82.9.147
+ Destination IP addr = 172.20.20.3
+TCP packet ->
+    source port 58533
+    destination port 22
+    sequence number 0x48ecb87a
+    acknowledgement number 0x10bd4add
+    acknowledgement true/false 1
+

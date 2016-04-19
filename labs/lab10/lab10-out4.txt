@@ -1,0 +1,445 @@
+======GLOBAL FILE  HEADER========================
+magic number a1b2c3d4 major verion 2 minor version 4
+maximum captured packet length 65535
+link layer type 1
+=================================================
+ === packet count 0 === 
+time captured  Tue Sep 23 01:29:43 2003
+
+Number of bytes captured: 92
+Length of the original packet: 92
+======ETHERNET HEADER============================
+ Destination address: 00:30:c1:61:eb:ed
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 78 bytes
+packet ID, 0x1c2 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 192.168.1.104
+============== UDP Packet ================
+udp source port: 4125
+udp dest port: 161
+udp packet length: 58
+udp checksum: 0x30ca
+
+ === packet count 1 === 
+time captured  Tue Sep 23 01:29:43 2003
+
+Number of bytes captured: 93
+Length of the original packet: 93
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:30:c1:61:eb:ed
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 79 bytes
+packet ID, 0xecd8 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 60 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xda7 
+IP source address - 192.168.1.104
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 161
+udp dest port: 4125
+udp packet length: 59
+udp checksum: 0x1ec4
+
+ === packet count 2 === 
+time captured  Tue Sep 23 01:29:46 2003
+
+Number of bytes captured: 92
+Length of the original packet: 92
+======ETHERNET HEADER============================
+ Destination address: 00:30:c1:61:eb:ed
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 78 bytes
+packet ID, 0x1c3 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 192.168.1.104
+============== UDP Packet ================
+udp source port: 4126
+udp dest port: 161
+udp packet length: 58
+udp checksum: 0x2fc9
+
+ === packet count 3 === 
+time captured  Tue Sep 23 01:29:46 2003
+
+Number of bytes captured: 93
+Length of the original packet: 93
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:30:c1:61:eb:ed
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 79 bytes
+packet ID, 0xecd9 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 60 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xda6 
+IP source address - 192.168.1.104
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 161
+udp dest port: 4126
+udp packet length: 59
+udp checksum: 0x1dc3
+
+ === packet count 4 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 77
+Length of the original packet: 77
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 63 bytes
+packet ID, 0x1c8 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 63.240.76.19
+============== UDP Packet ================
+udp source port: 1026
+udp dest port: 53
+udp packet length: 43
+udp checksum: 0x2d97
+
+ === packet count 5 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 293
+Length of the original packet: 293
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:06:25:da:af:73
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 279 bytes
+packet ID, 0x6432 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 241 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xd691 
+IP source address - 63.240.76.19
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 53
+udp dest port: 1026
+udp packet length: 259
+udp checksum: 0xe16a
+
+ === packet count 6 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 62
+Length of the original packet: 62
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 48 bytes
+packet ID, 0x1cb 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 128.119.245.12
+============== TCP Packet ================
+tcp source port: 4127tcp dest port: 80tcp sequence number: 62770tcp acknowledgement number: 0x0tcp ack bit: 0
+ === packet count 7 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 62
+Length of the original packet: 62
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:06:25:da:af:73
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 48 bytes
+packet ID, 0x0 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 55 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xc36 
+IP source address - 128.119.245.12
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 4127tcp sequence number: 27558tcp acknowledgement number: 0xf532tcp ack bit: 256
+ === packet count 8 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 54
+Length of the original packet: 54
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 40 bytes
+packet ID, 0x1cc 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 128.119.245.12
+============== TCP Packet ================
+tcp source port: 4127tcp dest port: 80tcp sequence number: 62770tcp acknowledgement number: 0x6ba6tcp ack bit: 256
+ === packet count 9 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 555
+Length of the original packet: 555
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 541 bytes
+packet ID, 0x1cd 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 128.119.245.12
+============== TCP Packet ================
+tcp source port: 4127tcp dest port: 80tcp sequence number: 62770tcp acknowledgement number: 0x6ba6tcp ack bit: 256
+ === packet count 10 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 60
+Length of the original packet: 60
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:06:25:da:af:73
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 40 bytes
+packet ID, 0xb6f9 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 55 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5544 
+IP source address - 128.119.245.12
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 4127tcp sequence number: 27558tcp acknowledgement number: 0xf532tcp ack bit: 256
+ === packet count 11 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 439
+Length of the original packet: 439
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:06:25:da:af:73
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 425 bytes
+packet ID, 0xb6fa 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 55 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x53c2 
+IP source address - 128.119.245.12
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 4127tcp sequence number: 27558tcp acknowledgement number: 0xf532tcp ack bit: 256
+ === packet count 12 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 541
+Length of the original packet: 541
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 527 bytes
+packet ID, 0x1d4 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 128.119.245.12
+============== TCP Packet ================
+tcp source port: 4127tcp dest port: 80tcp sequence number: 62770tcp acknowledgement number: 0x6ba6tcp ack bit: 256
+ === packet count 13 === 
+time captured  Tue Sep 23 01:29:47 2003
+
+Number of bytes captured: 1395
+Length of the original packet: 1395
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:06:25:da:af:73
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 1381 bytes
+packet ID, 0xb6fb 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 55 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x5005 
+IP source address - 128.119.245.12
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 4127tcp sequence number: 27558tcp acknowledgement number: 0xf532tcp ack bit: 256
+ === packet count 14 === 
+time captured  Tue Sep 23 01:29:48 2003
+
+Number of bytes captured: 54
+Length of the original packet: 54
+======ETHERNET HEADER============================
+ Destination address: 00:06:25:da:af:73
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 40 bytes
+packet ID, 0x1d7 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 128.119.245.12
+============== TCP Packet ================
+tcp source port: 4127tcp dest port: 80tcp sequence number: 62770tcp acknowledgement number: 0x6ba6tcp ack bit: 256
+ === packet count 15 === 
+time captured  Tue Sep 23 01:29:49 2003
+
+Number of bytes captured: 92
+Length of the original packet: 92
+======ETHERNET HEADER============================
+ Destination address: 00:30:c1:61:eb:ed
+ Source address: 00:08:74:4f:36:23
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 78 bytes
+packet ID, 0x1d8 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 128 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x0 
+IP source address - 192.168.1.102
+IP destination address - 192.168.1.104
+============== UDP Packet ================
+udp source port: 4128
+udp dest port: 161
+udp packet length: 58
+udp checksum: 0x2ec7
+
+ === packet count 16 === 
+time captured  Tue Sep 23 01:29:49 2003
+
+Number of bytes captured: 93
+Length of the original packet: 93
+======ETHERNET HEADER============================
+ Destination address: 00:08:74:4f:36:23
+ Source address: 00:30:c1:61:eb:ed
+    Vendor: (null)
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 79 bytes
+packet ID, 0xecda 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 60 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xda5 
+IP source address - 192.168.1.104
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 161
+udp dest port: 4128
+udp packet length: 59
+udp checksum: 0x1cc1
+

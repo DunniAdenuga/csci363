@@ -1,0 +1,485 @@
+======GLOBAL FILE  HEADER========================
+magic number a1b2c3d4 major verion 2 minor version 4
+maximum captured packet length 65535
+link layer type 1
+=================================================
+ === packet count 0 === 
+time captured  Wed Dec 21 16:12:39 2005
+
+Number of bytes captured: 42
+Length of the original packet: 42
+======ETHERNET HEADER============================
+ Destination address: ff:ff:ff:ff:ff:ff
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: BROADCAST ADDRESS
+
+ === packet count 1 === 
+time captured  Wed Dec 21 16:12:41 2005
+
+Number of bytes captured: 64
+Length of the original packet: 64
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+
+ === packet count 2 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 77
+Length of the original packet: 77
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 63 bytes
+packet ID, 0xd86c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x11e4 
+IP source address - 192.168.1.102
+IP destination address - 134.82.7.253
+============== UDP Packet ================
+udp source port: 32769
+udp dest port: 53
+udp packet length: 43
+udp checksum: 0xd295
+
+ === packet count 3 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 121
+Length of the original packet: 121
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 107 bytes
+packet ID, 0x8a5c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 62 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xa1c8 
+IP source address - 134.82.7.253
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 53
+udp dest port: 32769
+udp packet length: 87
+udp checksum: 0x44bc
+
+ === packet count 4 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 93
+Length of the original packet: 93
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 79 bytes
+packet ID, 0xd86f 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x11d1 
+IP source address - 192.168.1.102
+IP destination address - 134.82.7.253
+============== UDP Packet ================
+udp source port: 32769
+udp dest port: 53
+udp packet length: 59
+udp checksum: 0xd368
+
+ === packet count 5 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 138
+Length of the original packet: 138
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 124 bytes
+packet ID, 0x8a5d 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 62 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xa1b6 
+IP source address - 134.82.7.253
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 53
+udp dest port: 32769
+udp packet length: 104
+udp checksum: 0xe982
+
+ === packet count 6 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 77
+Length of the original packet: 77
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 63 bytes
+packet ID, 0xd870 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x11e0 
+IP source address - 192.168.1.102
+IP destination address - 134.82.7.253
+============== UDP Packet ================
+udp source port: 32769
+udp dest port: 53
+udp packet length: 43
+udp checksum: 0x6933
+
+ === packet count 7 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 147
+Length of the original packet: 147
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 133 bytes
+packet ID, 0x8a5e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 62 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0xa1ac 
+IP source address - 134.82.7.253
+IP destination address - 192.168.1.102
+============== UDP Packet ================
+udp source port: 53
+udp dest port: 32769
+udp packet length: 113
+udp checksum: 0x5ef7
+
+ === packet count 8 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 74
+Length of the original packet: 74
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 60 bytes
+packet ID, 0x260a 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xcfec 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16661tcp acknowledgement number: 0x0tcp ack bit: 0
+ === packet count 9 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 74
+Length of the original packet: 74
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 60 bytes
+packet ID, 0x0 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 49 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0x4f7 
+IP source address - 209.132.177.50
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 41454tcp sequence number: 49016tcp acknowledgement number: 0x4115tcp ack bit: 256
+ === packet count 10 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x260c 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xcff2 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16661tcp acknowledgement number: 0xbf78tcp ack bit: 256
+ === packet count 11 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 504
+Length of the original packet: 504
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 490 bytes
+packet ID, 0x260e 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xce3a 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16661tcp acknowledgement number: 0xbf78tcp ack bit: 256
+ === packet count 12 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x2ec0 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 49 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xd63e 
+IP source address - 209.132.177.50
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 41454tcp sequence number: 49016tcp acknowledgement number: 0x4116tcp ack bit: 256
+ === packet count 13 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 234
+Length of the original packet: 234
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 220 bytes
+packet ID, 0x2ec2 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 49 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xd594 
+IP source address - 209.132.177.50
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 41454tcp sequence number: 49016tcp acknowledgement number: 0x4116tcp ack bit: 256
+ === packet count 14 === 
+time captured  Wed Dec 21 16:12:42 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x2610 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xcfee 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16662tcp acknowledgement number: 0xbf78tcp ack bit: 256
+ === packet count 15 === 
+time captured  Wed Dec 21 16:12:53 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x2ec4 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 49 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xd63a 
+IP source address - 209.132.177.50
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 41454tcp sequence number: 49016tcp acknowledgement number: 0x4116tcp ack bit: 256
+ === packet count 16 === 
+time captured  Wed Dec 21 16:12:53 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x2612 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xcfec 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16662tcp acknowledgement number: 0xbf78tcp ack bit: 256
+ === packet count 17 === 
+time captured  Wed Dec 21 16:13:01 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x2614 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xcfea 
+IP source address - 192.168.1.102
+IP destination address - 209.132.177.50
+============== TCP Packet ================
+tcp source port: 41454tcp dest port: 80tcp sequence number: 16662tcp acknowledgement number: 0xbf78tcp ack bit: 256
+ === packet count 18 === 
+time captured  Wed Dec 21 16:13:01 2005
+
+Number of bytes captured: 66
+Length of the original packet: 66
+======ETHERNET HEADER============================
+ Destination address: 00:01:03:9c:ff:bd
+ Source address: 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 52 bytes
+packet ID, 0x3ebe 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 49 
+upper level Protocol in decimal: 6, in string: TCP, Tra 
+packet checksum, 0xc640 
+IP source address - 209.132.177.50
+IP destination address - 192.168.1.102
+============== TCP Packet ================
+tcp source port: 80tcp dest port: 41454tcp sequence number: 49016tcp acknowledgement number: 0x4116tcp ack bit: 256
+ === packet count 19 === 
+time captured  Wed Dec 21 16:13:09 2005
+
+Number of bytes captured: 71
+Length of the original packet: 71
+======ETHERNET HEADER============================
+ Destination address: 00:0c:41:a1:f5:da
+ Source address: 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+============== IP Header ================
+Type Of Service, 0x0
+header length, 5 words
+packet length, 57 bytes
+packet ID, 0x5819 
+FB, 0x0 
+MFB, 0x0 
+Fragment Offset, 0 
+TTL, 64 
+upper level Protocol in decimal: 17, in string: UDP, Use 
+packet checksum, 0x923d 
+IP source address - 192.168.1.102
+IP destination address - 134.82.7.253
+============== UDP Packet ================
+udp source port: 32769
+udp dest port: 53
+udp packet length: 37
+udp checksum: 0x31e1
+

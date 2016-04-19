@@ -1,0 +1,560 @@
+======GLOBAL FILE  HEADER========================
+magic number a1b2c3d4 major verion 2 minor version 4
+maximum captured packet length 65535
+link layer type 1
+=================================================
+ === packet count 0 === 
+Frame information:
+ captured time Wed Dec 21 16:12:39 2005
+ bytes captured 42
+ length of packet 42
+======ETHERNET HEADER============================
+ Type = 0x0806 ARP, Address Resolution Protocol
+ Destination address: ff:ff:ff:ff:ff:ff
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: BROADCAST ADDRESS
+
+ === packet count 1 === 
+Frame information:
+ captured time Wed Dec 21 16:12:41 2005
+ bytes captured 64
+ length of packet 64
+======ETHERNET HEADER============================
+ Type = 0x0806 ARP, Address Resolution Protocol
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+
+ === packet count 2 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 77
+ length of packet 77
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 63 bytes
+ IP packet ID : 0xd86c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0x11e4
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 134.82.7.253
+UDP packet ->
+    source port 32769
+    destination port 53
+    packet length 43
+    check-sum 0xd295
+
+ === packet count 3 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 121
+ length of packet 121
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 107 bytes
+ IP packet ID : 0x8a5c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset     0
+ Time-to-live (TTL) : 62
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0xa1c8
+ Source IP addr = 134.82.7.253
+ Destination IP addr = 192.168.1.102
+UDP packet ->
+    source port 53
+    destination port 32769
+    packet length 87
+    check-sum 0x44bc
+
+ === packet count 4 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 93
+ length of packet 93
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 79 bytes
+ IP packet ID : 0xd86f
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0x11d1
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 134.82.7.253
+UDP packet ->
+    source port 32769
+    destination port 53
+    packet length 59
+    check-sum 0xd368
+
+ === packet count 5 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 138
+ length of packet 138
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 124 bytes
+ IP packet ID : 0x8a5d
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset     0
+ Time-to-live (TTL) : 62
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0xa1b6
+ Source IP addr = 134.82.7.253
+ Destination IP addr = 192.168.1.102
+UDP packet ->
+    source port 53
+    destination port 32769
+    packet length 104
+    check-sum 0xe982
+
+ === packet count 6 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 77
+ length of packet 77
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 63 bytes
+ IP packet ID : 0xd870
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0x11e0
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 134.82.7.253
+UDP packet ->
+    source port 32769
+    destination port 53
+    packet length 43
+    check-sum 0x6933
+
+ === packet count 7 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 147
+ length of packet 147
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 133 bytes
+ IP packet ID : 0x8a5e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset     0
+ Time-to-live (TTL) : 62
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0xa1ac
+ Source IP addr = 134.82.7.253
+ Destination IP addr = 192.168.1.102
+UDP packet ->
+    source port 53
+    destination port 32769
+    packet length 113
+    check-sum 0x5ef7
+
+ === packet count 8 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 74
+ length of packet 74
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 60 bytes
+ IP packet ID : 0x260a
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xcfec
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x4115fe7e
+    acknowledgement number 0x0
+    acknowledgement true/false 0
+
+ === packet count 9 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 74
+ length of packet 74
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 60 bytes
+ IP packet ID : 0x   0
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 49
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0x4f7
+ Source IP addr = 209.132.177.50
+ Destination IP addr = 192.168.1.102
+TCP packet ->
+    source port 80
+    destination port 41454
+    sequence number 0xbf789c99
+    acknowledgement number 0x4115fe7f
+    acknowledgement true/false 1
+
+ === packet count 10 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x260c
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xcff2
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x4115fe7f
+    acknowledgement number 0xbf789c9a
+    acknowledgement true/false 1
+
+ === packet count 11 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 504
+ length of packet 504
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 490 bytes
+ IP packet ID : 0x260e
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xce3a
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x4115fe7f
+    acknowledgement number 0xbf789c9a
+    acknowledgement true/false 1
+
+ === packet count 12 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x2ec0
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 49
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xd63e
+ Source IP addr = 209.132.177.50
+ Destination IP addr = 192.168.1.102
+TCP packet ->
+    source port 80
+    destination port 41454
+    sequence number 0xbf789c9a
+    acknowledgement number 0x41160035
+    acknowledgement true/false 1
+
+ === packet count 13 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 234
+ length of packet 234
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 220 bytes
+ IP packet ID : 0x2ec2
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 49
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xd594
+ Source IP addr = 209.132.177.50
+ Destination IP addr = 192.168.1.102
+TCP packet ->
+    source port 80
+    destination port 41454
+    sequence number 0xbf789c9a
+    acknowledgement number 0x41160035
+    acknowledgement true/false 1
+
+ === packet count 14 === 
+Frame information:
+ captured time Wed Dec 21 16:12:42 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x2610
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xcfee
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x41160035
+    acknowledgement number 0xbf789d42
+    acknowledgement true/false 1
+
+ === packet count 15 === 
+Frame information:
+ captured time Wed Dec 21 16:12:53 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x2ec4
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 49
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xd63a
+ Source IP addr = 209.132.177.50
+ Destination IP addr = 192.168.1.102
+TCP packet ->
+    source port 80
+    destination port 41454
+    sequence number 0xbf789d42
+    acknowledgement number 0x41160035
+    acknowledgement true/false 1
+
+ === packet count 16 === 
+Frame information:
+ captured time Wed Dec 21 16:12:53 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x2612
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xcfec
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x41160035
+    acknowledgement number 0xbf789d43
+    acknowledgement true/false 1
+
+ === packet count 17 === 
+Frame information:
+ captured time Wed Dec 21 16:13:01 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x2614
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xcfea
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 209.132.177.50
+TCP packet ->
+    source port 41454
+    destination port 80
+    sequence number 0x41160035
+    acknowledgement number 0xbf789d43
+    acknowledgement true/false 1
+
+ === packet count 18 === 
+Frame information:
+ captured time Wed Dec 21 16:13:01 2005
+ bytes captured 66
+ length of packet 66
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:01:03:9c:ff:bd
+ Source address = 00:0c:41:a1:f5:da
+    Vendor: 3com Corporation
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 52 bytes
+ IP packet ID : 0x3ebe
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 49
+  Protocol value 6  name (TCP, Transmission Control Protocol.)
+ Header checksum 0xc640
+ Source IP addr = 209.132.177.50
+ Destination IP addr = 192.168.1.102
+TCP packet ->
+    source port 80
+    destination port 41454
+    sequence number 0xbf789d43
+    acknowledgement number 0x41160036
+    acknowledgement true/false 1
+
+ === packet count 19 === 
+Frame information:
+ captured time Wed Dec 21 16:13:09 2005
+ bytes captured 71
+ length of packet 71
+======ETHERNET HEADER============================
+ Type = 0x0800 IPv4, Internet Protocol version 4
+ Destination address: 00:0c:41:a1:f5:da
+ Source address = 00:01:03:9c:ff:bd
+    Vendor: Linksys Group
+ ============== IP Header ================
+ IP Type of Service (tos) 0x0
+ IP header length : 5 words
+ IP packet length : 57 bytes
+ IP packet ID : 0x5819
+ DF bit value : 0 May fragment
+ MF bit : 0 Last fragment
+  Fragment offset    64
+ Time-to-live (TTL) : 64
+  Protocol value 17  name (UDP, User Datagram Protocol.)
+ Header checksum 0x923d
+ Source IP addr = 192.168.1.102
+ Destination IP addr = 134.82.7.253
+UDP packet ->
+    source port 32769
+    destination port 53
+    packet length 37
+    check-sum 0x31e1
+
