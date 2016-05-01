@@ -90,3 +90,7 @@ Lab9:
 Grade: 20/20 + extra
 Comments: Very good! Submitted on time with correct output. 
 The magic number of the file should be printed as hexdecimal, not as a signed integer.
+
+Lab10:
+Grade: 20/20
+Comments: Very good!
