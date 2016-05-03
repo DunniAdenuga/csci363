@@ -85,3 +85,12 @@ Incorrect Makefile(?) I had to add elements in the Makefile to compile the progr
 source: $(SOBJ)
 	$(CC) $(LFLAGS) $(SOBJ) -o source crcmodel.o
 
+
+Lab9:
+Grade: 20/20 + extra
+Comments: Very good! Submitted on time with correct output. 
+The magic number of the file should be printed as hexdecimal, not as a signed integer.
+
+Lab10:
+Grade: 20/20
+Comments: Very good!
