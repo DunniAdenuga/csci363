@@ -160,7 +160,10 @@
 	   //strcpy(recvData->data, "");
 	   recvData->seq = 0;
 	   struct pkthdr* sentData =(struct pkthdr*)malloc(sizeof(struct pkthdr));
+	   int seq = 0;
+	   
 	  while (recvData->seq != 65534){
+	    
 	 fsize =sizeof(from);
 	 ssize_t cc;
 	 char* recv = (char*)malloc(BUFSIZE);
@@ -169,6 +172,8 @@
 	 //msg[0]++;
 	 //recvData = recvData2;
 	 //recvData->data = &recv[struct ];
+	 if(recvData->seq > seq){
+	 seq = recvData->seq;
 	 char * temp = (char*)malloc(MAX_UDP);
 	 memcpy(temp, &recv[sizeof(struct pkthdr)],recvData->data_length) ;
 	 printf("len - %d,\n type - %d, \n id - %d, \n seq - %d,\n checksum - 0x%x \n, Data: \n",recvData->data_length,recvData->type,recvData->id,recvData->seq,recvData->checksum/*,temp*/);
@@ -204,7 +209,7 @@
        
        //printf("Contents:\n %s\n", data);
        //FILE * sub = fopen("file_copy", "a+");
-       int fd = open("new_file", O_RDWR | O_CREAT, S_IRUSR | S_IRGRP | S_IROTH);
+        int fd = open("new_file", O_RDWR | O_CREAT, S_IRUSR | S_IRGRP | S_IROTH);
        //fputs(data, sub);
        int written = write(fd, data, count);
        printf("total length- %d\n", count);
@@ -214,7 +219,7 @@
 	     //free(data);
        count = 0;
 	     data  = (char *)malloc(BUFSIZE);
- }
+     }
 	 }
 	 else{
 	   printf("An error exists in the transmitted message.\n");
@@ -242,7 +247,8 @@
      int size2 = sizeof(from);
      int nbytes = Sendto(sd, sent, sizeof(struct pkthdr)+strlen(help)+1, 0, (struct sockaddr *)&from, size2);
 	 }
-	   }
+	  }
+	 }
 	 
 	 }
 	  close(sd);

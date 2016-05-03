@@ -22,7 +22,7 @@ int Socket(int domain, int type, int protocol);
 ssize_t Sendto(int sockfd, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen);
 ssize_t Recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);
 int send_data(char *host, int port, char *data, int len);
-
+void delay(int w);
 struct pkthdr {
    uint8_t  type;          // type of the packet
    uint8_t  id;            // an id number used to identify the data sent
@@ -165,7 +165,9 @@ struct sockaddr_in in;
     printf("len - %d,\n type - %d, \n id - %d, \n seq - %d,\n checksum - 0x%x \n, Data:\n",sentData->data_length,sentData->type,sentData->id,sentData->seq,sentData->checksum /*,tempBuffer*/);
     //printf("total length %d\n", sizeof(struct pkthdr)+ tempLen);
     int nbytes = Sendto(sd, sent, sizeof(struct pkthdr)+ tempLen, 0, (struct sockaddr *)&dest, size);
-  char * receive =  malloc(50);   
+  char * receive =  malloc(50);
+  //timer
+  delay(5);
   int  cc =Recvfrom(sd, receive, BUFSIZE , 0, (struct sockaddr *) &from, &size2);
   recvData = (struct pkthdr*)receive;
   temp = &receive[sizeof(struct pkthdr)];
@@ -206,11 +208,15 @@ struct sockaddr_in in;
     //strcat(sent, data);
     //strcpy(&sent[sizeof(struct pkthdr)], data);
     int nbytes = Sendto(sd, sent, sizeof(struct pkthdr)+len, 0, (struct sockaddr *)&dest, size);
+    delay(5);
     char * receive = malloc(50);
     int  cc =Recvfrom(sd, receive,BUFSIZE , 0, (struct sockaddr *) &from, &size2);
      recvData = (struct pkthdr*)receive;
      temp = &receive[sizeof(struct pkthdr)];
-     printf("temmp - %s\n", temp);
+     printf("temp - %s\n", temp);
+     if(strcmp(temp, "ack") != 0){
+       strcpy(temp, "nack");
+     }
     }
   }
   
@@ -249,4 +255,12 @@ ssize_t Recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
     exit(-1);
   }
   return rfid;
+}
+
+void delay(int w){
+ //timer
+  int x  = 0;
+  while(x < (w*100000)){
+    x++;
+  }
 }
