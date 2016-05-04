@@ -94,3 +94,8 @@ The magic number of the file should be printed as hexdecimal, not as a signed in
 Lab10:
 Grade: 20/20
 Comments: Very good!
+
+Lab11:
+Grade: 16/20
+Comments: Good work. The program doesn't work with large message, as you noted. I think the main mistake in the program is that you should have put the logic of breaking and sending data into small blocks in the functions of writes() and reads() themselves, not at the application program level.
+In addition, the logic of breaking large piece of data into smaller pieces is not quite right.
